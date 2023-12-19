@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Descubre la mejor selección de autos. Amplio inventario de vehículos nuevos y usados de alta calidad. Encuentra el auto perfecto para ti.">
+    <meta name="keywords" content="The Black Wolf, concesionaria, Autos nuevos, Autos usados, marcas de autos, 0KM">
+    <title>Vehiculos</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="../images/logo.png" type="image/x-icon">
+    <!--CSS-->
+    <link rel="stylesheet" href="../css/estilo.css">
+    <!--BS-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+</head>
+<body>
+    <!--NAV BS-->
+    <section class="tank-bootstrap-header">
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">THE BLACK WOLF</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar" aria-controls="collapsibleNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="./vehiculos.html">Vehiculos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./mas de wolf.html">Mas de Wolf</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./servicios.html">Servicios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </section>
+    <section class="tankbreadcrum">
+        <div class="breadcrum-bg">
+            <div class="container py-5 link-light">
+                <p><a class="btninicio link-light" href="../index.html">Inicio</a>&nbsp; / &nbsp; Vehiculos</p>
+            </div>
+        </div>
+    </section> 
+    <main>
+        <div class="detallesauto">
+            <div class="filter-bar">
+                <div class="filter-group">
+                    <label for="brand-model">Marca y Modelo:</label>
+                    <select id="brand-model">
+                        <option value="all">Todos</option>
+                        <option value="motivo1">Toyota</option>
+                        <option value="motivo2">Fiat</option>
+                        <option value="motivo3">Ford</option>
+                        <option value="motivo4">Volkswagen</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="year">Año:</label>
+                    <input type="number" id="year" min="1900" max="2023" step="1" value="2023">
+                </div>
+                <div class="filter-group">
+                    <label for="price">Precio:</label>
+                    <input type="range" id="price" min="0" max="100000" step="1000" value="50000">
+                    <output id="price-value">50,000</output>
+                </div>
+                <div class="filter-group">
+                    <label for="transmission">Transmisión:</label>
+                    <select id="transmission">
+                        <option value="all">Todos</option>
+                        <option value="manual">Manual</option>
+                        <option value="automatic">Automática</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="container-items">
+            <div class="item">
+                <figure>
+                    <img src="../images/toyotahilux.jpg" alt="Toyota Hilux">
+                </figure>
+                <div class="info-product">
+                    <h2>Toyota Hilux</h2>
+                    <p class="price">$20,000</p>
+                    <button>Comprar</button>
+                </div>
+            </div>
+            <div class="item">
+                <figure>
+                    <img src="../images/fiat cronos veiculo 2.jpg" alt="Fiat Cronos">
+                </figure>
+                <div class="info-product">
+                    <h2>Fiat Cronos</h2>
+                    <p class="price">$90,000</p>
+                    <button>Comprar</button>
+                </div>
+            </div>
+            <div class="item">
+                <figure>
+                    <img src="../images/ford fieta veiculo 3.jpg" alt="Ford Fiesta">
+                </figure>
+                <div class="info-product">
+                    <h2>Ford Fiesta</h2>
+                    <p class="price">$10,000</p>
+                    <button>Comprar</button>
+                </div>
+            </div>
+            <div class="item">
+                <figure>
+                    <img src="../images/peugeot 208 veiculo 4.jpg" alt="Peugeot 208">
+                </figure>
+                <div class="info-product">
+                    <h2>Peugeot 208</h2>
+                    <p class="price">$55,000</p>
+                    <button>Comprar</button>
+                </div>
+            </div>
+            <div class="item">
+                <figure>
+                    <img src="../images/volkswagen amarok veiculo 5.jpg" alt="Volkswagen Amarok">
+                </figure>
+                <div class="info-product">
+                    <h2>Volkswagen Amarok</h2>
+                    <p class="price">$100,000</p>
+                    <button>Comprar</button>
+                </div>
+            </div>
+            <div class="item">
+                <figure>
+                    <img src="../images/Toyota-Corolla-2023-frente.png" alt="Toyota Corolla">
+                </figure>
+                <div class="info-product">
+                    <h2>Toyota Corolla</h2>
+                    <p class="price">$30,000</p>
+                    <button>Comprar</button>
+                </div>
+            </div>
+        </div>
+        <div>
+            <ul class="pagination justify-content-end">
+                <li class="page-item"><a class="page-link text-black" href="#">Previous</a></li>
+                <li class="page-item"><a class="page-link text-black" href="#">1</a></li>
+                <li class="page-item"><a class="page-link text-black" href="#">2</a></li>
+                <li class="page-item"><a class="page-link text-black" href="#">3</a></li>
+                <li class="page-item"><a class="page-link text-black" href="#">Next</a></li>
+            </ul>
+        </div>
+    </main> 
+    <section>
+        <footer class="footer-distributed">
+            <div class="footer-left">
+                <h3>The <span>Black</span> Wolf</h3>
+                <p class="footer-links">
+                    <a href="../index.html">Inicio</a>
+                    |
+                    <a href="./vehiculos.html">Vehiculos</a>
+                    |
+                    <a href="./mas de wolf.html">Mas de Wolf</a>
+                    |
+                    <a href="./servicios.html">Servicios</a>
+                    |
+                    <a href="./contacto.html">contactos</a>
+                </p>
+                <p class="footer-company-name">Copyright © 2023 <strong>The Black Wolf</strong> All rights reserved</p>
+            </div>
+            <div class="footer-center">
+                <div>
+                    <i class="fa-solid fa-location-dot"></i>
+                    <p><span>Maipu 301</span>
+                        CABA</p>
+                </div>
+                <div>
+                    <i class="fa fa-phone"></i>
+                    <p>+15 5555-6555</p>
+                </div>
+                <div>
+                    <i class="fa fa-envelope"></i>
+                    <p><a href="#">theblackwolf@gmail.com</a></p>
+                </div>
+            </div>
+            <div class="footer-right">
+                <p class="footer-company-about">
+                    <span>Sobre Nosotros</span>
+                    En <strong>Black Wolf</strong>, nos dedicamos a ofrecer una experiencia excepcional a cada uno de nuestros clientes. Con una pasión arraigada por los vehículos y un compromiso inquebrantable con la calidad, nos esforzamos por proporcionar una selección diversa de automóviles de primera categoría.
+                </p>
+                <div class="footer-icons">
+                    <a href="facebook">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                    <a  href="instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a  href="linkedin">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                    <a  href="youtube">
+                        <i class="fa-brands fa-youtube"></i>
+                    </a>
+                </div>
+            </div>
+        </footer>
+        <a href="#" class="subir">
+            <i class="fa-solid fa-chevron-up"></i>
+        </a>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>
